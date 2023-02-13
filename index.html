@@ -37,7 +37,7 @@
             max-width: 900px;
             margin-inline: auto;
             display: flex;
-            /* justify-content: center; */
+            justify-content: space-between;
             align-items: center;
             gap:5rem
         }
@@ -51,7 +51,16 @@
             color: black;
             text-decoration: none;
             /* padding: 1rem 2rem; */
-            background-color: aliceblue;
+            /* background-color: aliceblue; */
+        }
+        .nav-link:hover{
+            background-color:#FADA9D;
+            border-radius: 5px;
+            padding:4px 8px;
+
+            cursor: pointer;
+           
+            
         }
 
     </style>
@@ -61,8 +70,8 @@
             <a href="/"><img src="./anime.png" class="logo-img" alt="anime"></a>
             <!-- <a href="#" class="logo">logo</a> -->
             <ul>
-                <li><a href="#ter">about</a></li>
-                <li><a href="/index.html" target="_blank">Anime list</a></li>
+                <li><a class="nav-link" href="#ter">about</a></li>
+                <li><a class="nav-link" href="/index.html" target="_blank">Anime list</a></li>
                 <li> <select name="" id="">
                     <option value="1"selected>genre</option>
                     <option value="1">haram</option>
@@ -72,7 +81,7 @@
                     <option value="1">action</option>
                     
                 </select></li>
-                <li><a href="#">popular</a></li>
+                <li><a class="nav-link" href="#">popular</a></li>
             </ul>
             </nav>
         </header>
